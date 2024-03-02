@@ -34,15 +34,13 @@
   }
   
   @media (max-width: 600px) {
-    .project {
+    .techstack {
       margin: 0;
       padding: 0;
       margin-top: 50px;
     }
-    .project hr {
+    .techstack hr {
       width: 280px;
     }
-    .project .card {
-      margin-top: 30px;
-    }
+    
   }

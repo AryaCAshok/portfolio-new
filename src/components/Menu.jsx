@@ -2,7 +2,10 @@ import React from 'react'
 import profileImage from '../assets/profilepic.jpg'
 import { container } from 'react-bootstrap'
 import './layout.css'
+import { Zoom } from 'react-reveal'
 import { Link} from 'react-scroll';
+import { Fade } from 'react-reveal'
+
 
 
 function Menu({ toggle }) {
@@ -10,13 +13,17 @@ function Menu({ toggle }) {
     <>
       {toggle ? (
         <>
-          <div className="navbar-profilepic ">
-            <container className="d-flex justify-content-center">
-              <img
-                style={{ height: "150px", width: "150px", borderRadius: "90px", marginTop: "10px", verticalAlign: "middle" }}
-                src={profileImage} alt="" />
-            </container>
-          </div>
+        <Zoom>
+        <div className="navbar-profilepic ">
+
+<container className="d-flex justify-content-center">
+  <img
+    style={{ height: "150px", width: "150px", borderRadius: "90px", marginTop: "10px", verticalAlign: "middle" }}
+    src={profileImage} alt="" />
+</container>
+</div>
+        </Zoom>
+         <Fade top>
           <div>
             <div style={{ color: "white", marginTop: "30px", marginLeft: "25px"  }} className='icons'>
               <div style={{marginTop:"20px"}}>
@@ -60,6 +67,7 @@ function Menu({ toggle }) {
               </div>
             </div>
           </div>
+          </Fade>
         </>
       ) :
         (

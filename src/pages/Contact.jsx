@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './contact.css'
-import { uploadMessage } from '../services/allAPI';
+
 
 function Contact() {
   const [message,setMessage]=useState({
@@ -21,7 +21,7 @@ function Contact() {
   }
   return (
     <>
-    <div className=" contact" id='contact'>
+    <div className="contact" id='contact'>
       <div className="card card0 border-0">
         <div className="row">
           <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
@@ -35,17 +35,22 @@ function Contact() {
           </div>
           <div className='col-lg-6 col-md-6'>
         
-            <div className="card2 d-flex card border-0 px-4 py-2">
+            <div className="card2 d-flex card border-0 px-4 py-5">
               <div className='row'>
                 <div className='row'>
 
                
               
-              <h6 className='d-flex align-items-center justify-content-center fs-3'>Connect </h6>
+              <h6 className='d-flex align-items-center justify-content-center fs-2'>
+                Contact With 
+                <i class="fa-brands fa-linkedin fs-2 ms-2"></i>
+                <i class="fa-brands fa-facebook fs-2 ms-4"></i>
+                <i class="fa-brands fa-square-instagram ms-4" ></i>
+                </h6>
               </div>
             <div className="row px-3 mb-4">
               <div className="line">
-              {/* <small className='or text-center'>OR</small> */}
+              {/* <small className='or text-center ' style={{marginLeft:"10px"}}>OR</small> */}
               <div className="line">
 
               </div>

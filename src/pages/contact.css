@@ -15,6 +15,19 @@
 }
 .border-line{
     border-right: 1px solid #e0e0e0;
+
+}
+
+/* .line{
+    height: 1px;
+    width: 45%;
+    background-color: black;
+    margin-top: 10px; */
+/* } */
+.or{
+    display: flex;
+    width: 10%;
+    font-weight: bold;
 }
 ::placeholder{
     color: #bdbdbd;
@@ -38,4 +51,16 @@ input,textarea{
     border-radius: 2px;
     margin-top: 15px;
     padding: 10px;
+}
+
+@media(max-width:600px){
+    .contact{
+        margin:0px;
+        padding:0px;
+        margin-top:30px;
+    }
+    .contact .card0 {
+        margin:0;
+
+    }
 }

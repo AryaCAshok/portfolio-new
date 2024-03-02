@@ -1,10 +1,12 @@
 import React from 'react'
 import profileImage from '../assets/profilepic.jpg'
 import './about.css'
+import{Flash} from 'react-reveal/Flash'
 
 function Aboutme() {
   return (
     <>
+    <Flash>
     <div className='container-fluid about' style={{marginLeft:"180px",marginTop:"30px",padding:"5px",borderRadius:"10px",marginBottom:"30px",boxShadow:"box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;"}}>
      <div className='row container'>
      <div className='col-md-6 col-xl-6 col-lg-6 col-xs-12'>
@@ -20,6 +22,7 @@ function Aboutme() {
      </div>
      </div>
     </div>
+    </Flash>
     </>
   )
 }

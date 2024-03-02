@@ -1,12 +1,13 @@
 import React from "react";
 import "./project.css";
-// import Spin from "react-reveal/Spin";
+import Spin from "react-reveal/Spin";
 
 import videoplayer from "./assets/video-player.png"
 import counter from './assets/counter.jpg'
 import restaurant from './assets/restaurant.jpg'
 import ekart from './assets/ekart.jpg'
 import netflix from './assets/netflix.jpg'
+import weather from './assets/weather.png'
 
 const Project = () => {
   return (
@@ -19,7 +20,7 @@ const Project = () => {
        
         {/* card design */}
         <div className="row" id="ads">
-          {/* <Spin> */}
+          <Spin>
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
@@ -155,7 +156,36 @@ const Project = () => {
                 </div>
               </div>
             </div>
-          {/* </Spin> */}
+            <div className="col-md-4">
+              <div className="card rounded">
+                <div className="card-image">
+                  {/* <span className="card-notify-badge">Mobile App</span> */}
+                  <img
+                    src={weather}
+                    alt="project2"
+                  />
+                </div>
+                <div className="card-image-overly m-auto mt-3">
+                  <span className="card-detail-badge">HTML</span>
+                  <span className="card-detail-badge">CSS</span>
+                  <span className="card-detail-badge">JavaScript</span>
+
+                  
+                </div>
+                <div className="card-body text-center">
+                  <div className="ad-title m-auto">
+                    <h5 className="text-uppercase">Weather App</h5>
+                  </div>
+                  <a
+                    className="ad-btn"
+                    href="https://github.com/AryaCAshok/ekart-Redux.git"
+                  >
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Spin>
         </div>
       </div>
     </>
